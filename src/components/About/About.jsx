@@ -13,6 +13,7 @@ import mission from '../../assets/images/mission.webp'
 import vision from '../../assets/images/vision.webp'
 import values from '../../assets/images/values.webp'
 import WhyChoose from './WhyChoose'
+import CountUp from 'react-countup';
 
 const cards = [
   {
@@ -54,7 +55,16 @@ const About = () => {
           <div className=' flex flex-col justify-center items-center mx-5'>
             <img src={customer} alt="" className='mb-4' />
             <div className=' md:h-[100px]'>
-              <h1 className='font-bold text-center text-2xl mt-2 mb-1 tracking-wide'>100%</h1>
+              <h1 className='font-bold text-center text-2xl mt-0 mb-2 tracking-wide'>
+
+                <CountUp start={0} end={100} delay={0} enableScrollSpy >
+                  {({ countUpRef, start }) => (
+                    <div style={{ fontSize: '36px', color: '#1782C5', gap: '4px' }}>
+                      <span ref={countUpRef} />
+                      <button onClick={start} style={{ fontSize: '36px', color: '#1782C5', border: 'none', background: 'transparent', cursor: 'pointer' }}>%</button>
+                    </div>
+                  )}
+                </CountUp></h1>
               <p className='w-[150px] text-center text-[#1E1E1E] tracking-wider'>Equipment Quality</p>
             </div>
           </div>
@@ -62,7 +72,16 @@ const About = () => {
           <div className=' flex flex-col justify-center items-center mx-5'>
             <img src={truck} alt="" className='mb-4' />
             <div className=' h-[100px]'>
-              <h1 className='font-bold text-center text-2xl mt-2 mb-1 tracking-wide'>40+</h1>
+              <h1 className='font-bold text-center text-2xl mt-0 mb-2 tracking-wide'>
+
+                <CountUp start={0} end={40} delay={0} enableScrollSpy >
+                  {({ countUpRef, start }) => (
+                    <div style={{ fontSize: '36px', color: '#1782C5', gap: '4px' }}>
+                      <span ref={countUpRef} />
+                      <button onClick={start} style={{ fontSize: '36px', color: '#1782C5', border: 'none', background: 'transparent', cursor: 'pointer' }}>+</button>
+                    </div>
+                  )}
+                </CountUp></h1>
               <p className='text-center text-[#1E1E1E] tracking-wider'>Years Team Experience</p>
             </div>
           </div>
@@ -70,7 +89,16 @@ const About = () => {
           <div className=' flex flex-col justify-center items-center  w-auto mx-5'>
             <img src={industry} alt="" className='mb-4' />
             <div className=' md:h-[100px]'>
-              <h1 className='font-bold text-center text-2xl mt-2 mb-1 tracking-wide'>6+</h1>
+              <h1 className='font-bold text-center text-2xl mt-0 mb-2 tracking-wide'>
+
+                <CountUp start={0} end={6} delay={0} enableScrollSpy >
+                  {({ countUpRef, start }) => (
+                    <div style={{ fontSize: '36px', color: '#1782C5', gap: '4px' }}>
+                      <span ref={countUpRef} />
+                      <button onClick={start} style={{ fontSize: '36px', color: '#1782C5', border: 'none', background: 'transparent', cursor: 'pointer' }}>+</button>
+                    </div>
+                  )}
+                </CountUp></h1>
               <p className='w-[150px] text-center text-[#1E1E1E] tracking-wider'>Industries Served</p>
             </div>
           </div>
@@ -78,7 +106,16 @@ const About = () => {
           <div className=' flex flex-col justify-center items-center mx-5'>
             <img src={booking} alt="" className='mb-4' />
             <div className=' h-[100px]'>
-              <h1 className='font-bold text-center text-2xl mt-2 mb-1 tracking-wide'>54+</h1>
+              <h1 className='font-bold text-center text-2xl mt-0 mb-2 tracking-wide'>
+
+                <CountUp start={0} end={54} delay={0} enableScrollSpy >
+                  {({ countUpRef, start }) => (
+                    <div style={{ fontSize: '36px', color: '#1782C5', gap: '4px' }}>
+                      <span ref={countUpRef} />
+                      <button onClick={start} style={{ fontSize: '36px', color: '#1782C5', border: 'none', background: 'transparent', cursor: 'pointer' }}>+</button>
+                    </div>
+                  )}
+                </CountUp></h1>
               <p className='w-[150px] text-center text-[#1E1E1E] tracking-wider'>Country Reach</p>
             </div>
           </div>
@@ -91,8 +128,8 @@ const About = () => {
             </div>
             <div className='lg:w-[50%] lg:flex flex-col justify-center items-end'>
               <div className='lg:w-[408px]'>
-              <h1 className='text-2xl md:text-3xl text-center lg:text-start my-5'>Mission</h1>
-              <p className='text-[#404040] text-justify mb-5'>To deliver innovative, reliable, and precision-engineered biosafety solutions that empower scientific progress and ensure the highest standards of safety and performance.</p>
+                <h1 className='text-2xl md:text-3xl text-center lg:text-start my-5'>Mission</h1>
+                <p className='text-[#404040] text-justify mb-5'>To deliver innovative, reliable, and precision-engineered biosafety solutions that empower scientific progress and ensure the highest standards of safety and performance.</p>
               </div>
             </div>
           </div>
@@ -114,43 +151,43 @@ const About = () => {
 
             <div className='lg:w-[50%] lg:flex flex-col justify-center items-end'>
               <div className=' lg:w-[408px]'>
-              <h1 className='text-2xl md:text-3xl text-center lg:text-start my-5'>Values</h1>
-              <div className=" lg:mb-5">
-                <ul className="text-[#404040]">
-                  <li className="flex items-start">
-                  <p>
-                    <span className="font-semibold text-black mr-2">1. Innovation:</span> Driving excellence through cutting-edge technology.
-                    </p>
-                  </li>
-                  <li className="flex items-start">
-                  <p>
-                    <span className="font-semibold text-black mr-2">2. Safety:</span>Ensuring uncompromising protection for people and processes.
-                    </p>
-                  </li>
-                  <li className="flex items-start">
-                    <p className='text-[#404040]'>
-                      <span className="font-semibold text-black mr-2">3. Integrity:</span> Building trust through transparency and reliability.
-                      
-                    </p>
-                  </li>
-                  <li className="flex items-start">
-                  <p>
-                    <span className="font-semibold text-black mr-2">4. Sustainability:</span> Creating eco-friendly solutions for a better future.
-                    </p>
-                  </li>
-                  <li className="flex items-start">
-                    <p>
-                    <span className="font-semibold text-black mr-2">5. Collaboration:</span> Partnering with clients to advance scientific discovery.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+                <h1 className='text-2xl md:text-3xl text-center lg:text-start my-5'>Values</h1>
+                <div className=" lg:mb-5">
+                  <ul className="text-[#404040]">
+                    <li className="flex items-start">
+                      <p>
+                        <span className="font-semibold text-black mr-2">1. Innovation:</span> Driving excellence through cutting-edge technology.
+                      </p>
+                    </li>
+                    <li className="flex items-start">
+                      <p>
+                        <span className="font-semibold text-black mr-2">2. Safety:</span>Ensuring uncompromising protection for people and processes.
+                      </p>
+                    </li>
+                    <li className="flex items-start">
+                      <p className='text-[#404040]'>
+                        <span className="font-semibold text-black mr-2">3. Integrity:</span> Building trust through transparency and reliability.
+
+                      </p>
+                    </li>
+                    <li className="flex items-start">
+                      <p>
+                        <span className="font-semibold text-black mr-2">4. Sustainability:</span> Creating eco-friendly solutions for a better future.
+                      </p>
+                    </li>
+                    <li className="flex items-start">
+                      <p>
+                        <span className="font-semibold text-black mr-2">5. Collaboration:</span> Partnering with clients to advance scientific discovery.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <WhyChoose/>
+        <WhyChoose />
 
         <div className=" my-10 md:py-10">
           <div className="flex md:max-w-[85%] mx-auto overflow-x-auto md:grid md:grid-cols-3 gap-4 md:gap-8 scrollbar-hide scrollbar scrollbar-thumb-customBlue scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
