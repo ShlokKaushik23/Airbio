@@ -38,7 +38,7 @@ const ProductPage = () => {
                         {/* 1st Div: Images */}
                         <div className="flex flex-col  md:flex-row justify-center items-center  border-[#1782C5] mb-5">
                             {/* Main Image Display */}
-                            <div className="w-[80%] md:w-full flex justify-center items-center  ">
+                            <div className="w-[80%] md:w-full flex justify-center items-center">
                                 <img
                                     src={selectedImage}
                                     alt="Selected Product Image"

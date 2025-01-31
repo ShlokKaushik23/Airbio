@@ -71,8 +71,6 @@ const Certification = () => {
                 </div>
             </div>
 
-            
-
         </div>
     )
 }

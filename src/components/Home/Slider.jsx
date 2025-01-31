@@ -9,9 +9,6 @@ import image4 from '../../assets/images/certification4.png'
 import image5 from '../../assets/images/certification5.png'
 
 
-
-
-
 const Slider = () => {
     return (
         <div className="slider-container relative overflow-hidden w-full my-8">
