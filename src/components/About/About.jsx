@@ -52,11 +52,10 @@ const About = () => {
         </div>
 
         <div className='md:max-w-[80%] mx-auto flex flex-col md:flex-row flex-wrap justify-center items-center gap-10 my-8 '>
-          <div className=' flex flex-col justify-center items-center mx-5'>
+          <div className=' flex flex-col justify-center items-center mx-5' >
             <img src={customer} alt="" className='mb-4' />
             <div className=' md:h-[100px]'>
               <h1 className='font-bold text-center text-2xl mt-0 mb-2 tracking-wide'>
-
                 <CountUp start={0} end={100} delay={0} enableScrollSpy >
                   {({ countUpRef, start }) => (
                     <div style={{ fontSize: '36px', color: '#1782C5', gap: '4px' }}>
@@ -73,7 +72,6 @@ const About = () => {
             <img src={truck} alt="" className='mb-4' />
             <div className=' h-[100px]'>
               <h1 className='font-bold text-center text-2xl mt-0 mb-2 tracking-wide'>
-
                 <CountUp start={0} end={40} delay={0} enableScrollSpy >
                   {({ countUpRef, start }) => (
                     <div style={{ fontSize: '36px', color: '#1782C5', gap: '4px' }}>
@@ -85,7 +83,6 @@ const About = () => {
               <p className='text-center text-[#1E1E1E] tracking-wider'>Years Team Experience</p>
             </div>
           </div>
-
           <div className=' flex flex-col justify-center items-center  w-auto mx-5'>
             <img src={industry} alt="" className='mb-4' />
             <div className=' md:h-[100px]'>
@@ -102,7 +99,6 @@ const About = () => {
               <p className='w-[150px] text-center text-[#1E1E1E] tracking-wider'>Industries Served</p>
             </div>
           </div>
-
           <div className=' flex flex-col justify-center items-center mx-5'>
             <img src={booking} alt="" className='mb-4' />
             <div className=' h-[100px]'>
