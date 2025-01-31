@@ -12,7 +12,7 @@ const posts = [
         title: 'Beyond Clean Air: What to Look for in Your Next Biosafety Cabinet',
         date: '2024-11-25',
         time: '3 min read',
-        readMore: '/blog/blog1',
+        readMore: 'blog1',
         // route: "blog1",
     },
     {
@@ -21,7 +21,7 @@ const posts = [
         title: 'Laminar Flow Hoods: Are You Sacrificing Safety for Cost?',
         date: '2024-11-24',
         time: '3 min read',
-        readMore: '/blog/blog2',
+        readMore: 'blog2',
         // route: "blog2",
     },
     {
@@ -30,7 +30,7 @@ const posts = [
         title: 'Fume Hoods and the Future of Laboratory Safety: 5 Innovations to Watch',
         date: '2024-11-23',
         time: '3 min read',
-        readMore: '/blog/blog3',
+        readMore: 'blog3',
         // route: "blog3",
     },
 ];
@@ -61,7 +61,7 @@ const BlogPage = () => {
                                 {/* Full Overlay */}
                                 <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <Link
-                                        to={`/blog/${post.route}`}
+                                        to={`/blog/${post.readMore}`}
                                         className="bg-black hover:bg-[#1782C5] rounded-full text-white py-2 px-5"
                                     >
                                         Read Full Blog
