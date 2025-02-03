@@ -100,7 +100,7 @@ const TeamData = [
         id: 12,
         icon: svg,
         imgSrc: img12,
-        name: 'Ajit Singh',
+        name: 'Dr. Ajit Thakur',
         role: 'R&D',
     },
     {
