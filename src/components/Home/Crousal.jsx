@@ -15,8 +15,6 @@ import { Link } from 'react-scroll';
 // import product2 from '../../assets/images/2nd.jpg'
 // import product3 from '../../assets/images/Laminar.jpg'
 
-
-
 const slides = [
     {
         image: product1,

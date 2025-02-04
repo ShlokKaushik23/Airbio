@@ -106,8 +106,6 @@ const cardsData = [
 
 ];
 
-
-
 const AllProductPage = () => {
     const [showAll, setShowAll] = useState(false);
 

@@ -15,7 +15,6 @@ import Header from '../Home/Header'
 import svg from '../../assets/images/calendar-linear.svg'
 
 
-
 const Contact = () => {
     return (
         <div>
