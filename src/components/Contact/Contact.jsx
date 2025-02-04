@@ -112,10 +112,10 @@ const Contact = () => {
                             <div className='flex gap-3 mt-2 mb-3'>
                                 <img src={connect2} alt="" />
                                 <a
-                                    href="mailto:contact.airbio@gmail.com"
+                                    href="mailto:info@airbio.in"
                                     className="font-custom text-[#1E1E1E] text-opacity-75"
                                 >
-                                    contact.airbio@gmail.com
+                                    info@airbio.in
                                 </a>
 
                             </div>
