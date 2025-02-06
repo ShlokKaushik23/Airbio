@@ -23,7 +23,7 @@ const productData = [
     img3: Bproduct3,
     img4: Bproduct4,
     italics: ["biological",'samples', "maximum","safety", "compliance."],
-    route: "/product/:category"
+    route: "/product/Biosafety"
   },
   {
     name: 'Fume Hoods',
@@ -35,7 +35,7 @@ const productData = [
     img3: product4,
     img4: product4,
     italics: ["Safe,", "efficient", "eco-friendly"],
-    route: "/product/category2"
+    route: "/product/FumeHoods"
   },  
   {
     name: 'Laminar Flow Cabinets',
@@ -47,7 +47,7 @@ const productData = [
     img3: Lproduct3,
     img4: Lproduct4,
     italics: ["free,", "contaminant", "healthcare"],
-    route: "/product/category3"
+    route: "/product/laminar"
   },
   
 ];
