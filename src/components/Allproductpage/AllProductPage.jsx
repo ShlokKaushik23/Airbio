@@ -89,7 +89,7 @@ const cardsData = [
     {
         title: "Falcon",
         image: art1,
-        subtitle: "Bsc Class II, B2 (Falcon)",
+        subtitle: "Biosafety Cabinets Class II, B2",
         description: "A benchtop model with a 100% exhaust system for volatile chemicals and radionuclides.",
         buttonText: "Visit Product",
         showTitle: true,
@@ -97,7 +97,7 @@ const cardsData = [
     {
         title: "Agies",
         image: art2,
-        subtitle: "Bsc Class II, B2 (Agies)",
+        subtitle: "Biosafety Cabinets Class II, B2",
         description: "It ensures reliable containment with a dynamic air barrier and robust engineering control.",
         buttonText: "Visit Product",
         showTitle: true,
@@ -105,21 +105,21 @@ const cardsData = [
     {
         title: "Harmony",
         image: art3,
-        subtitle: "Bsc Class II, A2",
+        subtitle: "Biosafety Cabinets Class II, A2",
         description: "A compact, energy-efficient tabletop model ideal for labs and academia.",
         buttonText: "Visit Product",
     },
     {
         title: "Agies",
         image: art4,
-        subtitle: "Bsc Class II, A2 (Agies)",
+        subtitle: "Biosafety Cabinets Class II, A2",
         description: "Equipped with a high-efficiency DC ECM motor, it reduces energy use and extends filter life.",
         buttonText: "Visit Product",
         showTitle: true,
     },
     {
         image: art5,
-        subtitle: "Main BSC Class II A2",
+        subtitle: "Main Biosafety Cabinets Class II A2",
         description: "Its durable stainless steel design simplifies cleaning and offers flexible airflow options for safety.",
         buttonText: "Visit Product",
     },

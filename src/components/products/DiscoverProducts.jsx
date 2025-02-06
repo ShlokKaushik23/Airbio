@@ -13,16 +13,21 @@ const cardData = [
         title: "Biosafety Cabinets",
         image: art1,
         description: "Ensure contaminant free, precision tasks in research, healthcare and manufacturing",
+        route: "/Biosafety"
     },
     {
         title: "Air Fume Hoods",
         image: art2,
         description: "Safe, efficient and eco-friendly protection from hazardous fumes and pollutants",
+        route: "/FumeHoods"
+
     },
     {
         title: "Laminar Flow Cabinets",
         image: art3,
         description: "Create a secure environment to handle biological samples with maximum safety and compliance",
+        route: "/laminar"
+
     },
     // {
     //     title: "Biosafety Cabinets",
