@@ -1,22 +1,19 @@
 import React, { useState } from 'react'
 import Header from '../Home/Header'
-import img1 from '../../assets/images/contact1.png'
-import art1 from '../../assets/images/biosafety/bsc class_B2 (Falcon)/BSC CLASS _ B2 (Falcon)-FRONT.webp'
-import art2 from '../../assets/images/biosafety/bsc class 2 B2 (Agies)/BSC CLASS II B2 (Agies)-FRONT.webp'
-import art3 from '../../assets/images/biosafety/bsc class 2 A2/BSC CLASS II A2-FRONT.webp'
-import art4 from '../../assets/images/biosafety/bsc class 2 A2 (Agies)/BSC CLASS II A2 (Agies)-FRONT.webp'
-import art5 from '../../assets/images/biosafety/Main bsc class 2 A2/MAIN BSC CLASS II A2-FRONT.webp'
+import img1 from '../../assets/images/laminar/Laminar.png'
+import art1 from '../../assets/images/laminar/Vertical Laminar AirFlow/Vertical Laminar Airflow-FRONT.webp'
+import art2 from '../../assets/images/laminar/Vertical Laminar Flow (Velocity)/Vertical Laminar Flow (Velocity)-FRONT.webp'
 import vector from '../../assets/images/Vector.svg'
 import post2 from '../../assets/images/Post2.webp'
 import post3 from '../../assets/images/Post3.webp'
-import icon1 from '../../assets/images/filtration.svg'
-import icon2 from '../../assets/images/biosafety/keyfeatures/features2.svg'
-import icon3 from '../../assets/images/biosafety/keyfeatures/features3.svg'
-import icon4 from '../../assets/images/biosafety/keyfeatures/features4.svg'
-import icon5 from '../../assets/images/biosafety/keyfeatures/features5.svg'
-import icon6 from '../../assets/images/biosafety/keyfeatures/features6.svg'
-import icon7 from '../../assets/images/biosafety/keyfeatures/features7.svg'
-import icon8 from '../../assets/images/biosafety/keyfeatures/features8.svg'
+import icon1 from '../../assets/images/laminar/keyfeatures/features1.svg'
+import icon2 from '../../assets/images/laminar/keyfeatures/features2.svg'
+import icon3 from '../../assets/images/laminar/keyfeatures/features3.svg'
+import icon4 from '../../assets/images/laminar/keyfeatures/features4.svg'
+import icon5 from '../../assets/images/laminar/keyfeatures/features5.svg'
+import icon6 from '../../assets/images/laminar/keyfeatures/features6.svg'
+import icon7 from '../../assets/images/laminar/keyfeatures/features7.svg'
+import icon8 from '../../assets/images/laminar/keyfeatures/features8.svg'
 import icon9 from '../../assets/images/biosafety/keyfeatures/features9.svg'
 import icon10 from '../../assets/images/biosafety/keyfeatures/features10.svg'
 import arrow from '../../assets/images/crossArrow.svg'
@@ -25,108 +22,88 @@ import arrow from '../../assets/images/crossArrow.svg'
 const features = [
     {
         icon: icon1,
-        title: "HEPEX™ Zero Leak Airflow System",
+        title: "Hinged Front Panel :",
         description:
-            "Ensures uniform air distribution, prevents leaks with negative pressure chambers, and minimizes vibration transfer.",
+            " Self-support brackets for effortless maintenance and accessibility.",
     },
     {
         icon: icon2,
-        title: "Advanced Filtration Technology",
+        title: "Intuitive Touch Interface :",
         description:
-            "Utilizes high-efficiency particulate air (HEPA) filters to ensure 99.99% particle capture.",
+            "Precise control and monitoring.",
     },
     {
         icon: icon3,
-        title: "Energy Efficient Design",
+        title: "Dual Rear Cable Managers :",
         description:
-            "Optimized to consume minimal energy while providing maximum performance.",
+            "Keep your workspace tidy and organized.",
     },
     {
         icon: icon4,
-        title: "HEPEX™ Zero Leak Airflow System",
+        title: "Stainless Steel Work Surface :",
         description:
-            "Ensures uniform air distribution, prevents leaks with negative pressure chambers, and minimizes vibration transfer.",
+            "Offering durability and easy cleaning.",
     },
     {
         icon: icon5,
-        title: "Advanced Filtration Technology",
+        title: "Front-Loading HEPA Filter :",
         description:
-            "Utilizes high-efficiency particulate air (HEPA) filters to ensure 99.99% particle capture.",
+            "Superior filtration and straightforward replacement.",
     },
     {
         icon: icon6,
-        title: "Energy Efficient Design",
+        title: "Trace Odor Pre-Filter :",
         description:
-            "Optimized to consume minimal energy while providing maximum performance.",
+            "Enhancing air purity.",
     },
     {
         icon: icon7,
-        title: "Energy Efficient Design",
+        title: "10° Angled Safety Glass :",
         description:
-            "Optimized to consume minimal energy while providing maximum performance.",
+            "Ergonomic visibility and comfort. ",
     },
     {
         icon: icon8,
-        title: "Advanced Filtration Technology",
+        title: "Glass Side Walls :",
         description:
-            "Utilizes high-efficiency particulate air (HEPA) filters to ensure 99.99% particle capture.",
+            "Providing enhanced illumination and visibility during operations. ",
     },
-    {
-        icon: icon9,
-        title: "Energy Efficient Design",
-        description:
-            "Optimized to consume minimal energy while providing maximum performance.",
-    },
-    {
-        icon: icon10,
-        title: "Energy Efficient Design",
-        description:
-            "Optimized to consume minimal energy while providing maximum performance.",
-    },
+    
 ];
-
 const cardsData = [
     {
         title: "Falcon",
-        image: art1,
-        subtitle: "Bsc Class II, B2 (Falcon)",
-        description: "A benchtop model with a 100% exhaust system for volatile chemicals and radionuclides.",
+        image: art1, 
+        subtitle: "Vertical Laminar AirFlow",
+        description: "Laminar air flow cabinets provide a sterile, HEPA-filtered workspace",
         buttonText: "Visit Product",
-        showTitle: true,
     },
     {
-        title: "Agies",
+        title: "Velocity",
         image: art2,
-        subtitle: "Bsc Class II, B2 (Agies)",
-        description: "It ensures reliable containment with a dynamic air barrier and robust engineering control.",
+        subtitle: "Vertical Laminar AirFlow",
+        description: "Safeguard samples but aren’t suitable for hazardous substances",
         buttonText: "Visit Product",
         showTitle: true,
     },
-    {
-        title: "Harmony",
-        image: art3,
-        subtitle: "Bsc Class II, A2",
-        description: "A compact, energy-efficient tabletop model ideal for labs and academia.",
-        buttonText: "Visit Product",
-    },
-    {
-        title: "Agies",
-        image: art4,
-        subtitle: "Bsc Class II, A2 (Agies)",
-        description: "Equipped with a high-efficiency DC ECM motor, it reduces energy use and extends filter life.",
-        buttonText: "Visit Product",
-        showTitle: true,
-    },
-    {
-        image: art5,
-        subtitle: "Main BSC Class II A2",
-        description: "Its durable stainless steel design simplifies cleaning and offers flexible airflow options for safety.",
-        buttonText: "Visit Product",
-    },
+    // {
+    //     title: "Harmony",
+    //     image: art3, 
+    //     subtitle: "Class II, Type B2 Biosafety Cabinet",
+    //     description: "Ideal for safely handling minute quantities of volatile chemicals & trace amounts of radionuclides",
+    //     buttonText: "Visit Product",
+    // },
+    // {
+    //     title: "Infinity",
+    //     image: art1,
+    //     subtitle: "Class II, Main B2 Biosafety Cabinet",
+    //     description: "Ideal for safely handling minute quantities of volatile chemicals & trace amounts of radionuclides",
+    //     buttonText: "Visit Product",
+    // },
 
 ];
 
-const AllProductPage = () => {
+const LaminarFlow = () => {
     const [showAll, setShowAll] = useState(false);
 
     const handleReadMore = () => {
@@ -141,15 +118,15 @@ const AllProductPage = () => {
 
             <div className=''>
                 <div className='p-5 md:w-[80%] mx-auto flex flex-col lg:flex-row justify-between items-center '>
-                    <div className=''>
-                        <h1 className='text-3xl md:text-5xl font-medium text-center lg:text-start my-3 md:mb-8 text-[#1782C5] leading-10 md:leading-tight lg:w-[250px]'>Airbio Biosafety Cabinets</h1>
+                    <div className='mb-5'>
+                        <h1 className='text-3xl md:text-5xl font-medium text-center lg:text-start my-3 md:mb-8 text-[#1782C5] leading-10 md:leading-tight lg:w-[250px]'>Laminar Air Flow Cabinets</h1>
                         <div className='flex items-center justify-center gap-3 md:gap-5'>
                             <p className='border border-black p-1 px-4 text-sm md:text-lg rounded-3xl'>Precision</p>
                             <p className='border border-black p-1 px-4 text-sm md:text-lg rounded-3xl'>Sterility</p>
-                            <p className='border border-black p-1 px-4 text-sm md:text-lg rounded-3xl'>Standard</p>
+                            <p className='border border-black p-1 px-4 text-sm md:text-lg rounded-3xl'>Efficiency</p>
                         </div>
                     </div>
-                    <div>
+                    <div className=''>
                         <img src={img1} alt="" className='md:h-[404px] md:w-auto object-cover' />
                     </div>
                 </div>
@@ -159,19 +136,19 @@ const AllProductPage = () => {
                     <div>
                         <div className="gap-3 p-5 flex flex-col my-5 items-center">
                             <h1 className="p-2 px-4 text-2xl mt-8 border border-[#C0C0C0] rounded-full font-medium inline-block text-center">
-                                All Biosafety Cabinets
+                                All Laminar Cabinets
                             </h1>
                             <p className=" text-sm text-[#1E1E1E] text-center">
-                                AirBio Biosafety Cabinets deliver unmatched reliability and protection for laboratory workflows.
+                                AirBio Laminar Cabinets deliver unmatched reliability and protection for laboratory workflows.
                             </p>
                         </div>
                         <div className='pl-5 md:pl-10'>
-                            <div className="flex overflow-x-scroll scrollbar scrollbar-thumb-customBlue scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full pr-5 gap-4 md:gap-10 py-4 mx-auto">
+                            <div className="flex md:justify-center md:overflow-hidden  overflow-x-scroll scrollbar scrollbar-thumb-customBlue scrollbar-track-gray-200 scrollbar-thumb-rounded-full scrollbar-track-rounded-full pr-5 md:pr-10 gap-4 md:gap-10 py-4 mx-auto">
                                 {cardsData.map((card, index) => (
                                     <div key={index}>
                                         {/* Card Content */}
                                         <div className="min-w-[318px] h-auto md:w-[300px] md:h-[370px] flex flex-col justify-center items-center md:min-w-0 rounded-3xl p-4 border border-[#CDCDCD]">
-                                            {card.showTitle && (
+                                        {card.showTitle && (
                                                 <h2 className="text-[16px] p-[4px] px-4 border-[#1782C5] text-[#1782C5] border rounded-[50px]">
                                                     {card.title}
                                                 </h2>
@@ -179,7 +156,7 @@ const AllProductPage = () => {
                                             <img
                                                 src={card.image}
                                                 alt={`Card ${index + 1}`}
-                                                className="w-auto h-[302px] md:w-[221px] object-cover"
+                                                className="w-auto h-[302px] md:w-[221px] object-cover py-4"
                                             />
                                         </div>
 
@@ -204,7 +181,7 @@ const AllProductPage = () => {
                 {/* features */}
                 <div className="my-10 p-5 md:my-16 md:py-5">
                     <h1 className="text-2xl font-medium text-center my-5 pb-5">
-                        Key Features of <span className="text-[#1782C5]">AirBio Biosafety Cabinets</span>
+                        Key Features of <span className="text-[#1782C5]">Laminar Air Flow Cabinets</span>
                     </h1>
 
                     <div className="grid grid-cols-1 md:max-w-[97%] mx-auto md:grid-cols-2 lg:grid-cols-3 gap-8 md:wp-5 ">
@@ -251,8 +228,9 @@ const AllProductPage = () => {
                         </div>
 
                         <div className='md:w-[60%] md:px-5 lg:px-0 lg:mr-8 '>
-                            <h1 className='text-xl text-center md:text-start md:text-3xl font-medium mb-5'>About <span className='text-[#1782C5]'>AirBio Biosafety Cabinets</span> </h1>
-                            <p className='text-justify text-[14px] text-opacity-75'><span className='font-medium'>AirBio Biosafety Cabinets (BSCs)</span> are precision-engineered laboratory workspaces designed for the safe handling of potentially hazardous or contaminated materials. By combining unidirectional airflow from the top with air inflow from the surrounding room, these cabinets create a dynamic air barrier that protects both users and their materials from contamination. <br />They are available in two variants - <span className='font-medium'>Class II A2</span >and <span className='font-medium'>Class II B2</span>.</p>
+                            <h1 className='text-xl text-center md:text-start md:text-3xl font-medium mb-5'>About <span className='text-[#1782C5]'>Laminar Air Flow Cabinets</span> </h1>
+                            <p className='text-justify text-[14px] text-opacity-75'>Laminar air flow cabinets, also known as laminar clean benches, flow hoods, or air flow benches, create a controlled sterile environment to safeguard samples and products from contaminants like microorganisms and airborne particles. These cabinets operate by drawing air through a high-efficiency HEPA filter and channeling it in a consistent, streamlined airflow towards the user – the hallmark of "laminar flow."
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -264,9 +242,10 @@ const AllProductPage = () => {
                         </div>
 
                         <div className='md:w-[60%] md:px-5 lg:px-0 lg:mr-8 '>
-                            <h1 className='text-xl text-center md:text-start md:text-3xl font-medium mb-5'>Tailored to Meet <span className='text-[#1782C5]'>Biosafety</span> Needs</h1>
-
-                            <p className='text-justify text-[14px] text-opacity-75'>Biosafety Cabinets come in various classes, each catering to specific bio-containment requirements. Within these classes, the cabinets differ based on how air is recirculated or exhausted. Regardless of the type, all AirBio BSCs leverage <span className='font-medium'>High Efficiency Particulate Air (HEPA)</span> or <span className='font-medium'>Ultra Low Particulate Air (ULPA)</span> filters to maintain a sterile workspace.</p>
+                            <h1 className='text-xl text-center md:text-start md:text-3xl font-medium mb-5'>Meet AirBio’s <span className='text-[#1782C5]'>Laminar Air Flow Cabinet</span></h1>
+                            <p className='text-justify text-[14px] text-opacity-75'>
+                                A trusted solution in laboratories worldwide, the Velocity vertical laminar air flow cabinet combines advanced technology with user-friendly features to elevate safety and efficiency. Available in multiple sizes, it boasts a modern touch-screen interface for seamless operation.
+                               </p>
                         </div>
                     </div>
                 </div>
@@ -275,4 +254,4 @@ const AllProductPage = () => {
     )
 }
 
-export default AllProductPage
+export default LaminarFlow
